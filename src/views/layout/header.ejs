@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden; height: 100%;">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="http://droitthemes.com/html/saasland/img/favicon.png" type="image/x-icon"/>
+    <title><%= title %></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../assets/bootstrap.min.css" />
+    <!--icon font css-->
+    <link rel="stylesheet" href="./../assets/themify-icons.css" />
+    <link rel="stylesheet" href="./../assets/simple-line-icons.css" />
+    <link rel="stylesheet" href="./../assets/all.css" />
+    <link rel="stylesheet" href="./../assets/flaticon.css" />
+    <link rel="stylesheet" href="./../assets/animate.css" />
+    <link rel="stylesheet" href="./../assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./../assets/animate.css" />
+    <link rel="stylesheet" href="./../assets/magnific-popup.css" />
+    <link rel="stylesheet" href="./../assets/style.css" />
+    <link rel="stylesheet" href="./../assets/jquery.multiscroll.css" />
+    <link rel="stylesheet" href="./../assets/style(1).css" />
+    <link rel="stylesheet" href="./../assets/responsive.css" />
+   
+  </head>
+
+  <body style="overflow: hidden; height: 100%;">
+    <header class="full_header">
+      <div class="float-left">
+        <a class="logo" href="http://droitthemes.com/html/saasland/home-split.html#">
+          <img src="./../assets/logo2.png" srcset="img/logo2x-2.png 2x" alt="logo"/>
+          <img src="./../assets/logo.png" srcset="img/logo2x.png 2x" alt=""/>
+        </a>
+      </div>
+      <div class="float-right">
+        
+        <div class="bar_menu">
+          <% if(user){ %>
+            <div class="text-warning font-weight-bold text-uppercase"><%= user.username %></div>
+            <% }else{ %>
+          <span style="background-color: rgb(255, 255, 255);"></span>
+          <span style="background-color: rgb(255, 255, 255);"></span>
+          <span style="background-color: rgb(255, 255, 255);"></span>        
+        <% } %>
+      </div>
+      </div>
+    </header>
+    <div class="hamburger-menu-wrepper" id="menu">
+      <div class="animation-box">
+        <i class="icon_close close_icon"></i>
+        <div class="menu-box d-table navbar">
+          <ul class="navbar-nav justify-content-end menu offcanfas_menu">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <% if(!user){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+            <% } %>
+            <li class="nav-item dropdown submenu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="http://droitthemes.com/html/saasland/home-split.html#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="http://droitthemes.com/html/saasland/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://droitthemes.com/html/saasland/pricing-1.html" class="nav-link">Price Style_01</a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://droitthemes.com/html/saasland/pricing-2.html" class="nav-link">Price Style_02</a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://droitthemes.com/html/saasland/contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://droitthemes.com/html/saasland/404.html" class="nav-link">404</a>
+                </li>
+              </ul>
+            </li>
+            <% if(user){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            <% } %>
+          </ul>
+          <div class="header_footer">
+            <h5>Follow US</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_facebook"></i></a>
+              </li>
+              <li>
+                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_twitter"></i></a>
+              </li>
+              <li>
+                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_pinterest"></i></a>
+              </li>
+              <li>
+                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_facebook"></i></a>
+              </li>
+            </ul>
+            <p>
+              SaasLand- Copyright 2019. All rights reserved.<br />
+              Made by DroitThemes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
