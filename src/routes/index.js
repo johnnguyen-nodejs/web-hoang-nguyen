@@ -19,7 +19,8 @@ var {
     getSendMailPassword,
     checkAdmin,
     getAbout,
-    getGift
+    getGift,
+    getContact
 } = require("./../controllers/getRoute");
 var { authValid, userValid } = require("./../validation/index");
 var passport = require("passport");
@@ -41,6 +42,7 @@ var initRouter = (app)=>{
     router.get('/verify/:token', checkLogedOut, verifyAccount );
     router.post('/register', checkLogedOut, authValid.register, postRegister);
     router.get('/user/gift', checkLogedIn, getGift);
+    router.get('/user/contact', getContact);
 
 
     //login

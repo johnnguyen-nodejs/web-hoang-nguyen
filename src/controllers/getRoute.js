@@ -19,6 +19,12 @@ var getAbout = (req, res)=>{
         user: req.user
     });
 };
+var getContact = (req, res)=>{
+    res.render("user/contact", {
+        title: "Mago Mart | Contact Us",
+        user: req.user
+    });
+};
 var getGift = (req, res)=>{
     res.render("user/gift", {
         title: "Mago Mart | Gifts",
@@ -112,5 +118,6 @@ module.exports = {
     getSendMailPassword: getSendMailPassword,
     checkAdmin: checkAdmin,
     getAbout: getAbout,
-    getGift: getGift
+    getGift: getGift,
+    getContact: getContact
 };
