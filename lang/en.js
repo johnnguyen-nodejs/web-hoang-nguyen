@@ -44,12 +44,12 @@ const tranSuccess = {
 }; 
 
 const tranMail = {
-    SUBJECT: "WBANK EXCHANGE: Authenticate Account",
+    SUBJECT: "MAGO MART: Authenticate Account",
     TEMPLATE: (linkVerify) => {
         return `
         <div style=""width: 100%; text-align: center;">
             <img src="https://i.imgur.com/6PfRAgh.png" style="width:25%";>
-            <h2>Thank you for your join in WBANK Global</h2>
+            <h2>Thank you for your join in Mago Global</h2>
             <h3>Please Click the link to complete the registation</h3>
             <br>
             <a href="${linkVerify}" target="_blank" style="text-decoration: none;"><button style="background: blue; padding: 5px; border:none; border-radius: 10px;">Complete Register</button></a>
@@ -59,7 +59,7 @@ const tranMail = {
     SEND_FAILED: "Send Email process Error, please Contact Support"
 };
 const tranRecoverPassword = {
-    SUBJECT: "WBANK EXCHANGE: Update Password",
+    SUBJECT: "MAGOMART: Update Password",
     TEMPLATE: (linkRecoverPassword) => {
         return `
         <div style=""width: 100%; text-align: center;">
