@@ -17189,7 +17189,7 @@ input[type="text"] {
 }
 
 div#left2 {
-    background: url("./../assets/img/2.1.png");
+    background: url("./../assets/img/2.1.png") no-repeat center;
 }
 
 .ms-section.section_4 {
@@ -17637,7 +17637,7 @@ div#left2 {
 }
 
 .split_content .contact_form_box .text_box input[type="text"], .split_content .contact_form_box .text_box textarea, .split_content .contact_form_box .text_box input[type="password"] {
-  background: #f7f8fb;
+  background: #5e2ced;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -25044,7 +25044,16 @@ a .h_head:hover {
     left: 100%;
   }
 }
+@media (max-width: 700px){
+  *{margin:0; padding: 0;}
 
+h4 {
+    color: white;
+}
+  img#img-51 {
+    max-width: 350px;
+  }
+}
 /*====================================================*/
 
 /*# sourceMappingURL=style.css.map */
