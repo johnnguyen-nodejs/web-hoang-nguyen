@@ -17,7 +17,9 @@ var {
     updateNewPassword,
     getUpdatePassword,
     getSendMailPassword,
-    checkAdmin
+    checkAdmin,
+    getAbout,
+    getGift
 } = require("./../controllers/getRoute");
 var { authValid, userValid } = require("./../validation/index");
 var passport = require("passport");
@@ -32,16 +34,18 @@ var router = express.Router();
 var initRouter = (app)=>{
     // page route
     router.get('/', getHome );
+    // router.get('/about', getAbout );
     router.get('/confirm-mail', getConfirmMail );
     router.get('/register', checkLogedOut, getRegister );
     router.get('/login', checkLogedOut, getLogin );
     router.get('/verify/:token', checkLogedOut, verifyAccount );
     router.post('/register', checkLogedOut, authValid.register, postRegister);
+    router.get('/user/gift', checkLogedIn, getGift);
 
 
     //login
     router.post('/login', checkLogedOut, passport.authenticate("local", {
-        successRedirect: "/",
+        successRedirect: "/user/gift",
         failureRedirect: "/login",
         successFlash: true,
         failureFlash: true

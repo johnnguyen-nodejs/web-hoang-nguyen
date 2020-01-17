@@ -9,38 +9,50 @@ var {
 
 var getHome = (req, res)=>{
     res.render("index", {
-        title: "WBank | Home",
+        title: "Mago Mart | Home",
+        user: req.user
+    });
+};
+var getAbout = (req, res)=>{
+    res.render("user/about", {
+        title: "Mago Mart | About Us",
+        user: req.user
+    });
+};
+var getGift = (req, res)=>{
+    res.render("user/gift", {
+        title: "Mago Mart | Gifts",
         user: req.user
     });
 };
 var getRecoverPassword = (req, res)=>{
     res.render("authentication/recover-password", {
-        title: "WBank | Recove password",
+        title: "Mago Mart | Recove password",
         user: req.user
     });
 };
 var getSendMailPassword = (req, res)=>{
     res.render("authentication/send-mail", {
-        title: "WBank | Email Recover Password",
+        title: "Mago Mart | Email Recover Password",
         user: req.user
     });
 };
 var getUpdatePassword = (req, res)=>{
     res.render("authentication/new-password", {
-        title: "WBank | Update New Password",
+        title: "Mago Mart | Update New Password",
         user: req.user
     });
 };
 var getConfirmMail = (req, res)=>{
     res.render("auth/confirm-mail", {
-        title: "WBank | Confirm Email",
+        title: "Mago Mart | Confirm Email",
         user: req.user
     });
 };
 
 var getRegister = (req, res)=>{
         res.render("authentication/register", {
-            title: "WBank | Register",
+            title: "Mago Mart | Register",
             errors: req.flash("errors"),
             success: req.flash("success"),
             user: req.user
@@ -48,7 +60,7 @@ var getRegister = (req, res)=>{
     };
 var getLogin = (req, res)=>{
         res.render("authentication/login", {
-            title: "WBank | Login",
+            title: "Mago Mart | Login",
             errors: req.flash("errors"),
             success: req.flash("success"),
             user: req.user
@@ -98,5 +110,7 @@ module.exports = {
     updateNewPassword: updateNewPassword,
     getUpdatePassword: getUpdatePassword,
     getSendMailPassword: getSendMailPassword,
-    checkAdmin: checkAdmin
+    checkAdmin: checkAdmin,
+    getAbout: getAbout,
+    getGift: getGift
 };

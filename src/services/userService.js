@@ -51,7 +51,7 @@ var postRecoverPassword = (email, protocol, host) => {
             console.log(error);
             reject(tranMail.SEND_FAILED);
         });
-        resolve(tranSuccess.send_email_password_success(user.local.email));
+        resolve(true);
     });
 }
 var verifyAccountForgetPassword = (tokenRecoverPassword) => {

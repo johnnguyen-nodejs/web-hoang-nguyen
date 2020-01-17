@@ -1,17 +1,4 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Md. Shahadat Hussain
-@URL: https://themeforest.net/user/droitthemes
 
-This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: 
-@Author: Md. Shahadat Hussain
-@Developed By: Rony
-@Developer URL: https://themeforest.net/user/droitthemes
 
 @Default Styles
 
@@ -2825,7 +2812,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .navbar .offcanfas_menu > .nav-item.submenu .nav-link:after {
-  content: "\33";
+  /* content: "\33"; */
   font-family: eleganticons;
   position: absolute;
   right: 13px;
@@ -3049,11 +3036,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
   transform: translateY(3rem);
-  -webkit-transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  transition: opacity .5s .6s ease, -webkit-transform .5s .6s ease;
-  -o-transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease;
-  transition: transform .5s .6s ease, opacity .5s .6s ease, -webkit-transform .5s .6s ease;
+  -webkit-transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  transition: opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
+  -o-transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease;
+  transition: transform .5s .6s ease,
+ opacity .5s .6s ease,
+ -webkit-transform .5s .6s ease;
   list-style: none;
   padding-left: 18%;
   padding-right: 100px;
@@ -17193,6 +17186,10 @@ input[type="text"] {
   background-image: -moz-linear-gradient(40deg, #6712a8 0%, #5f28fb 100%);
   background-image: -webkit-linear-gradient(40deg, #6712a8 0%, #5f28fb 100%);
   background-image: -ms-linear-gradient(40deg, #6712a8 0%, #5f28fb 100%);
+}
+
+div#left2 {
+    background: url("./../assets/img/2.1.png");
 }
 
 .ms-section.section_4 {

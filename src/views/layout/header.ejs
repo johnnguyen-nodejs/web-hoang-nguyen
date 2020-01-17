@@ -7,6 +7,8 @@
     <title><%= title %></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./../assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    
     <!--icon font css-->
     <link rel="stylesheet" href="./../assets/themify-icons.css" />
     <link rel="stylesheet" href="./../assets/simple-line-icons.css" />
@@ -26,7 +28,7 @@
   <body style="overflow: hidden; height: 100%;">
     <header class="full_header">
       <div class="float-left">
-        <a class="logo" href="http://droitthemes.com/html/saasland/home-split.html#">
+        <a class="logo" href="/">
           <img src="./../assets/logo2.png" srcset="img/logo2x-2.png 2x" alt="logo"/>
           <img src="./../assets/logo.png" srcset="img/logo2x.png 2x" alt=""/>
         </a>
@@ -35,7 +37,7 @@
         
         <div class="bar_menu">
           <% if(user){ %>
-            <div class="text-warning font-weight-bold text-uppercase"><%= user.username %></div>
+            <div class="text-warning font-weight-bold text-uppercase" style="border: solid 2px grey; border-radius: 999px; padding: 5px;"><%= user.username %></div>
             <% }else{ %>
           <span style="background-color: rgb(255, 255, 255);"></span>
           <span style="background-color: rgb(255, 255, 255);"></span>
@@ -53,67 +55,76 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <% if(!user){ %>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
+              <li class="nav-item dropdown submenu">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Authentication
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="/login" class="nav-link">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/register" class="nav-link">Register</a>
+                  </li>
+                </ul>
+              </li>
             </li>
             <% } %>
-            <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="http://droitthemes.com/html/saasland/home-split.html#"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Pages
-              </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="http://droitthemes.com/html/saasland/about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="http://droitthemes.com/html/saasland/pricing-1.html" class="nav-link">Price Style_01</a>
-                </li>
-                <li class="nav-item">
-                  <a href="http://droitthemes.com/html/saasland/pricing-2.html" class="nav-link">Price Style_02</a>
-                </li>
-                <li class="nav-item">
-                  <a href="http://droitthemes.com/html/saasland/contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="http://droitthemes.com/html/saasland/404.html" class="nav-link">404</a>
-                </li>
-              </ul>
+            
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
             <% if(user){ %>
+              <li class="nav-item dropdown submenu">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gifts
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="/user/gift" class="nav-link">Your Gift</a>
+                  </li>
+                </ul>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="/logout">Logout</a>
             </li>
             <% } %>
+            
           </ul>
           <div class="header_footer">
             <h5>Follow US</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_facebook"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
               </li>
               <li>
-                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_twitter"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_pinterest"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
               </li>
               <li>
-                <a href="http://droitthemes.com/html/saasland/home-split.html#"><i class="social_facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
               </li>
             </ul>
             <p>
-              SaasLand- Copyright 2019. All rights reserved.<br />
-              Made by DroitThemes
+              Mago Mart- Copyright 2019. All rights reserved.<br />
+              Made by Mago Group
             </p>
           </div>
         </div>

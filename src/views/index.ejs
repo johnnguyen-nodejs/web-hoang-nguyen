@@ -11,12 +11,19 @@
                   <div class="square three"></div>
                   <div class="br_shap"></div>
                   <div class="content">
-                    <h2>Digital solutions <br />Boutique</h2>
+                    <h2>E-commerce platform
+                      on Blockchain</h2>
                     <p>
-                      Nice one mufty brown bread James Bond lost the plot
-                      chinwag vagabond are.!
+                      100% refund on transactions on our
+                      ecommerce platform. Officially launched
+                      in July 2020. Be our first members.!
                     </p>
-                    <a href="http://droitthemes.com/html/saasland/home-split.html#" class="btn_get btn_hover">Learn More</a>
+                    <% if(!user){ %>
+                    <a href="/register" class="btn_get btn_hover">Register Now</a>
+                    <a href="/login" class="btn_get btn_hover">Login Now</a>
+                    <% }else{ %>
+                    <a href="/user/gift" class="btn_get btn_hover">Your Gifts</a>
+                    <% } %>
                   </div>
                 </div>
               </div>
@@ -40,10 +47,6 @@
                   <div class="dot dot_three wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
                     <span class="dot1"></span><span class="dot2"></span>
                   </div>
-                  <img class="text_bg one wow fadeInLeft" data-wow-delay="0.5s" src="./../assets/text_one.png" alt="" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;"/>
-                  <img class="text_bg two wow fadeInDown" data-wow-delay="0.3s" src="./../assets/text_three.png" alt="" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;"/>
-                  <img class="text_bg three wow fadeInRight" data-wow-delay="0.1s" src="./../assets/text_two.png" alt="" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"/>
-                  <img class="wow fadeIn phone_img" data-wow-delay="1ms" src="./../assets/iPhonex.png" alt="" style="visibility: hidden; animation-delay: 1ms; animation-name: none;"/>
                 </div>
               </div>
             </div>
@@ -53,40 +56,24 @@
           <div class="ms-tableCell" style="height: 669px;">
             <div class="split_banner_content height">
               <div class="intro">
-                <div class="web_skill_content">
+                <div class="split_content">
+                  <div class="space-100"></div>
                   <h2 class="split_title">
-                    Awesome for <br />startups &amp; tech
+                    The notification system
+                    is fully automated by
+                    BOT on Messenger
                   </h2>
-                  <ul class="skillbar-box">
-                    <li>
-                      <div class="custom-skillbar-title">
-                        <span>Photoshop</span>
-                        <div class="skill-bar-percent">95%</div>
-                      </div>
-                      <div class="skillbar-bg" data-percent="95%">
-                        <div class="custom-skillbar" style="width: 95%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="custom-skillbar-title">
-                        <span>Illustrator</span>
-                        <div class="skill-bar-percent">65%</div>
-                      </div>
-                      <div class="skillbar-bg" data-percent="65%">
-                        <div class="custom-skillbar" style="width: 65%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="custom-skillbar-title">
-                        <span>UI/UX design</span>
-                        <div class="skill-bar-percent">45%</div>
-                      </div>
-                      <div class="skillbar-bg" data-percent="45%">
-                        <div class="custom-skillbar" style="width: 45%;"></div>
-                      </div>
-                    </li>
-                  </ul>
-                  <a href="http://droitthemes.com/html/saasland/home-split.html#" class="btn btn_three btn_hover">Learn More</a>
+                  <div class="space-100"></div>
+                  <h4><i class="far fa-dot-circle"></i> &nbsp;Notification of deposit & withdrawal</h4>
+                  <h4><i class="fas fa-dot-circle"></i> &nbsp;Notification of new orders </h4>
+                  <h4><i class="far fa-dot-circle"></i> &nbsp;Notification of new partners </h4>
+                  <h4><i class="fas fa-dot-circle"></i> &nbsp;Notification Refund </h4>
+                  <h4><i class="far fa-dot-circle"></i> &nbsp;Notification of partner development
+                    commission</h4>
+                  <a
+                    href="#"
+                    class="btn btn_three s_app_btn"
+                    >Learn More</a>
                 </div>
               </div>
             </div>
@@ -100,7 +87,7 @@
               <div class="intro">
                 <div class="app_img">
                   <div class="square three"></div>
-                  <img class="wow fadeInRight" data-wow-delay="1ms" src="./../assets/iPhoneX2.png" alt="" style="visibility: hidden; animation-delay: 1ms; animation-name: none;"/>
+                  <img class="wow fadeInRight" data-wow-delay="1ms" src="./../assets/img/4.1.png" alt="" style="visibility: hidden; animation-delay: 1ms; animation-name: none;"/>
                 </div>
               </div>
             </div>
@@ -112,8 +99,7 @@
               <div class="intro">
                 <div class="split_content">
                   <h2 class="split_title">
-                    <span>Hire Us</span><br />
-                    Let’s start new project
+                    Let's submit a request to us
                   </h2>
                   <form
                     action="http://droitthemes.com/html/saasland/contact_process.php"
@@ -172,6 +158,20 @@
               <div class="square one"></div>
               <div class="square two"></div>
               <div class="contact_bg"></div>
+              <div class="intro">              
+                <div class="spliet_slider_img">
+                  <img
+                      class="phone_one"
+                      src="./../assets/img/4.1.png"
+                      alt=""
+                    />
+                  <img
+                    class="phone_two"
+                    src="./../assets/img/1.1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -181,32 +181,40 @@
               <div class="intro">
                 <div class="app_featured_content split_app_content">
                   <h2 class="split_title">
-                    <span>SaasLand</span> <br />Download this app Now
+                    100% refund on Purchases
                   </h2>
                   <p>
-                    Do one chap gutted mate cheesed off dropped a clanger crikey
-                    bum bag tosser hotpot gosh, absolutely bladdered young
-                    delinquent cockup get stuffed mate cheeky a Queen's English
-                    bog blimey ummm I'm telling.!
+                    The cashback trend of shopping continues
+                    to be successful. Along with the
+                    development of e-commer, Cashback is
+                    the global economic development trend.!
                   </p>
                   <a
-                    href="http://droitthemes.com/html/saasland/home-split.html#"
+                    href="#"
                     class="btn btn_three s_app_btn"
-                    ><i class="fab fa-google-play"></i>Learn More</a
-                  >
-                  <a
-                    href="http://droitthemes.com/html/saasland/home-split.html#"
-                    class="btn btn_three s_app_btn"
-                    ><i class="fab fa-apple"></i>Learn More</a
-                  >
+                    >Learn More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="ms-section section_8 ms-table" id="right3" style="height: 100%;">
+        <div class="ms-section section_8 ms-table" id="right3" style="background-image: -webkit-linear-gradient(40deg, rgb(103, 18, 168) 0%, rgb(95, 40, 251) 100%); height: 100%;">
           <div class="ms-tableCell" style="height: 669px;">
-            <div class="split_banner height"></div>
+            <div class="split_banner height">
+              <div class="border_shap one"></div>
+              <div class="border_shap two"></div>
+              <div class="square four"></div>
+              <div class="intro">
+                <div class="spliet_slider_img">
+                  <img
+                    class="phone_two"
+                    src="./../assets/img/3.1.png"
+                    alt=""
+                    style="top:50px!important;"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="ms-section section_7 ms-table" id="right2" style="height: 100%;">
@@ -215,17 +223,18 @@
               <div class="intro">
                 <div class="app_featured_content split_app_content">
                   <h2 class="split_title">
-                    With iPhone X<br />
-                    the device is the display
+                    Application of Blockchain
+                    on refunds in e-commerce
                   </h2>
                   <p>
-                    Why I say old chap that is spiffing plastered chinwag,
-                    bender horse play bits and bobs spiffing good time faff
-                    about get stuffed mate absolutely bladdered Richard, what a
-                    load of rubbish cras geeza tickety.!
+                    MagoMart uses the Blockchain platform
+                    in order payments and relies on smart
+                    contracts to process transactions. Users
+                    can experience the new way of buying
+                    and refunding.
                   </p>
                   <a
-                    href="http://droitthemes.com/html/saasland/home-split.html#"
+                    href="#"
                     class="btn btn_three btn_hover"
                     >Learn More</a
                   >
@@ -242,14 +251,14 @@
               <div class="square four"></div>
               <div class="intro">
                 <div class="spliet_slider_img">
-                  <img
+                  <!-- <img
                     class="phone_one"
                     src="./../assets/iPhoneX-left.png"
                     alt=""
-                  />
+                  /> -->
                   <img
                     class="phone_two"
-                    src="./../assets/iPhoneX-Right.png"
+                    src="./../assets/img/5.1.png"
                     alt=""
                   />
                 </div>
